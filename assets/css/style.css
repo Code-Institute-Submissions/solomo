@@ -1,10 +1,10 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - *
- * Name:  Pete Carey
- * Email: internetpete@gmail.com
- * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+* Name:  Pete Carey
+* Email: internetpete@gmail.com
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* Typography
- * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* Import Google Fonts */
 
@@ -44,7 +44,7 @@ a:hover {
 }
 
 /* Main Colours
- * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* Colour */
 
@@ -75,7 +75,7 @@ a:hover {
 }
 
 /* Header
- * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* Background */
 
@@ -131,7 +131,7 @@ a.nav-link {
 }
 
 /* Main
- * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 main {
 	background-color: #FAFCFC;
@@ -202,6 +202,206 @@ main li i {
 .jumbotron.jumbo-blue {
 	background-color: #448599;
 	background-image: url("../images/jumbo-bg-blue.jpg");
+}
+
+/* Card Deck / Products Price Tables 
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.card-deck .card {
+	min-width: 220px;
+}
+
+.products .card {
+	border-radius: 1rem 1rem 0 0;
+	background-clip: padding-box !important;
+	background: #E7A9A9;
+}
+
+/* Red */
+
+.products .card-red {
+	background-color: #E7A9A9;
+	/* fallback */
+	background-image: linear-gradient(#F3D4D4, #DC7F7F 20%);
+}
+
+/* Green */
+
+.products .card-green {
+	background-color: #8DD1CD;
+	/* fallback */
+	background-image: linear-gradient(#C6E8E6, #54BAB5 20%);
+}
+
+/* Blue */
+
+.products .card-blue {
+	background-color: #A1C2CC;
+	/* fallback */
+	background-image: linear-gradient(#D0E0E5, #73A4B3 20%);
+}
+
+.products .card-header {
+	background-color: transparent;
+	/* Avoids corners showing over radius */
+	padding: 1.5rem 1rem;
+	color: #FFFFFF;
+}
+
+.products .card-body {
+	background-color: #FFFFFF;
+}
+
+.products .card-header h3 {
+	font-weight: 600;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.products .card-body h1,
+.products .card-body h4 {
+	font-weight: 500;
+}
+
+/* Line Through */
+
+.old-price {
+	color: #D05454;
+	text-decoration: line-through;
+}
+
+/* Diagonal Line Through / X Through */
+
+.retail-price {
+	color: #D05454;
+	position: relative;
+	display: inline-block;
+}
+
+.retail-price::before,
+.retail-price::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	border-top: 1px solid #052437;
+}
+
+.retail-price::before {
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-o-transition: rotate(-20deg);
+	transform: rotate(-20deg);
+}
+
+.retail-price::after {
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-o-transition: rotate(20deg);
+	transform: rotate(20deg);
+}
+
+/* Corner Ribbon */
+
+.ribbon-corner {
+	position: absolute;
+	right: -5px;
+	top: -5px;
+	z-index: 10;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+}
+
+.ribbon-corner .ribbon {
+	color: #FAFCFC;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 30px;
+	width: 140px;
+	display: block;
+	position: absolute;
+	top: 24px;
+	right: -31px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transition: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.ribbon::before,
+.ribbon::after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	z-index: -1;
+	border: 3px solid transparent;
+}
+
+.ribbon::before {
+	left: 0px;
+}
+
+.ribbon::after {
+	right: 0%;
+}
+
+/* Ribbon Colours */
+
+/* Red */
+
+.ribbon-red .ribbon {
+	background-color: #D05454;
+	/* fallback */
+	background-image: linear-gradient(#D05454, #AA1C1C);
+}
+
+.ribbon-red .ribbon::before {
+	border-left-color: #8B0909;
+	border-top-color: #8B0909;
+}
+
+.ribbon-red .ribbon::after {
+	border-right-color: #8B0909;
+	border-top-color: #8B0909;
+}
+
+/* Green */
+
+.ribbon-green .ribbon {
+	background-color: #1BA39C;
+	/* fallback */
+	background-image: linear-gradient(#1BA39C, #03685F);
+}
+
+.ribbon-green .ribbon::before {
+	border-left-color: #00423A;
+	border-top-color: #00423A;
+}
+
+.ribbon-green .ribbon::after {
+	border-right-color: #00423A;
+	border-top-color: #00423A;
+}
+
+/* Blue */
+
+.ribbon-blue .ribbon {
+	background-color: #448599;
+	/* fallback */
+	background-image: linear-gradient(#448599, #12455C);
+}
+
+.ribbon-blue .ribbon::before {
+	border-left-color: #052437;
+	border-top-color: #052437;
+}
+
+.ribbon-blue .ribbon::after {
+	border-right-color: #052437;
+	border-top-color: #052437;
 }
 
 /* Forms
@@ -309,7 +509,7 @@ main li i {
 }
 
 /* Footer
- * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
 	min-height: 240px;
@@ -336,14 +536,15 @@ footer ul {
 	margin-bottom: 0;
 }
 
-footer li {}
-
 footer li i {
 	margin-right: 12px;
 }
 
 footer a {
 	color: rgba(164, 218, 215, .8);
+	-webkit-transition: color .3s ease-in-out;
+	-moz-transition: color .3s ease-in-out;
+	-o-transition: color .3s ease-in-out;
 	transition: color .3s ease-in-out;
 }
 
@@ -410,17 +611,24 @@ footer li.active a:hover {
 }
 
 /* Media Queries 
- * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-/* Bootstrap 4 Breakpoints */
+/* Bootstrap 4 Breakpoints
+* - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ --breakpoint-xs: 0;
+ --breakpoint-sm: 576px;
+ --breakpoint-md: 768px;
+ --breakpoint-lg: 992px;
+ --breakpoint-xl: 1200px;
+ */
 
-/* xs - Extra Small Devices Only - less than 544px */
+/* xs - Extra Small Devices Only - less than 576px */
 
-@media (max-width: 543px) {}
+@media (max-width: 575px) {}
 
-/* sm - Small Devices - 544px and up */
+/* sm - Small Devices - 576px and up */
 
-@media (min-width: 544px) {}
+@media (min-width: 576px) {}
 
 /* Small Devices Only - less than 767px */
 
