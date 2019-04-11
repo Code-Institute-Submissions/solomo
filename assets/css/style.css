@@ -2,53 +2,111 @@
  * Name:  Pete Carey
  * Email: internetpete@gmail.com
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
- 
+
 /* Typography
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
- 
+
 /* Import Google Fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
- 
+
 /* Fonts */
-body   { font-family: 'Montserrat', sans-serif; }
 
-p,h1,h2,h3,h4,h5,h6 { margin: 0; padding: 0; font-weight: 300; }
+body {
+	font-family: 'Montserrat', sans-serif;
+}
 
-p { font-weight: 400; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+}
 
-a:hover { text-decoration: none; }
+p {
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	font-weight: 400;
+}
 
+a:hover {
+	text-decoration: none;
+}
+
+.solomo {
+	font-weight: 600;
+	letter-spacing: .0625rem;
+	font-size: 1em;
+}
+
+/* Main Colours
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* Colour */
+
+.so-red {
+	color: #D05454;
+}
+
+.so-green {
+	color: #1BA39C;
+}
+
+.so-blue {
+	color: #448599;
+}
+
+/* Background Colour */
+
+.so-bg-red {
+	background-color: #D05454;
+}
+
+.so-bg-green {
+	background-color: #1BA39C;
+}
+
+.so-bg-blue {
+	background-color: #448599;
+}
 
 /* Header
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
- 
+
 /* Background */
+
 .navbar-solomo {
-    background-color: #203E46 !important;
+	background-color: #203E46 !important;
 	border-bottom: 5px solid #D05454;
 	letter-spacing: .0625em;
 }
 
 /* Logo */
+
 a.navbar-brand img {
 	height: 46px;
 	margin-top: 6px;
 }
 
 /* Navigation */
+
 .navbar button:focus {
-    outline: none;
-	border-color: rgba(255,255,255,.3) !important;
+	outline: none;
+	border-color: rgba(255, 255, 255, .3) !important;
 }
 
 .navbar-solomo .navbar-nav .nav-link {
-	color: rgba(164,218,215,.8);
+	color: rgba(164, 218, 215, .8);
 }
 
 a.nav-link {
 	-webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
 	-moz-transition: background-color .3s ease-in-out, color .3s ease-in-out;
-    -o-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+	-o-transition: background-color .3s ease-in-out, color .3s ease-in-out;
 	transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
@@ -61,9 +119,7 @@ a.nav-link:hover {
 	color: #FCFEFE !important;
 }
 
-a.nav-link:active {
-
-}
+a.nav-link:active {}
 
 a.nav-link {
 	padding: .5rem 1rem !important;
@@ -71,49 +127,178 @@ a.nav-link {
 }
 
 .nav-item i {
-     margin-right: 8px;
+	margin-right: 8px;
 }
 
+/* Main
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+main {
+	background-color: #FAFCFC;
+}
+
+/* Footer
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+footer {
+	min-height: 240px;
+	color: rgba(164, 218, 215, .8);
+	background-color: #203E46;
+	border-top: 5px solid #D05454;
+	letter-spacing: .0625em;
+}
+
+footer h4 {
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+footer p,
+footer li {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 27px;
+}
+
+footer ul {
+	margin-bottom: 0;
+}
+
+footer li {}
+
+footer li i {
+	margin-right: 12px;
+}
+
+footer a {
+	color: rgba(164, 218, 215, .8);
+	transition: color .3s ease-in-out;
+}
+
+footer li.active a {
+	color: #D05454;
+}
+
+footer a:hover,
+footer li.active a:hover {
+	color: #FCFEFE;
+}
+
+.copyright {
+	font-size: 11px;
+	line-height: 11px;
+	color: rgba(164, 218, 215, .6);
+}
+
+/* Animated Social Media Icons */
+
+.social-media li i {
+	margin: 0;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 21px;
+	color: #fafafa;
+	overflow: hidden;
+	/* Prevents the background scaling with font size */
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+/* Transition Rotate and Increase Font Size */
+
+.social-media li i:hover {
+	font-size: 27px;
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transition: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+.social-media .facebook i {
+	background-color: #3b5998;
+}
+
+.social-media .twitter i {
+	background-color: #1dcaff;
+}
+
+.social-media .instagram i {
+	background-color: #8a3ab9;
+}
+
+.social-media .youtube i {
+	text-indent: 1px;
+	color: #ff0000;
+	background-color: #fafafa;
+}
 
 /* Media Queries 
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* Bootstrap 4 Breakpoints */
 
-/* xs - Extra Small Devices - less than 544px */
-@media (max-width : 543px) {
+/* xs - Extra Small Devices Only - less than 544px */
 
-}
+@media (max-width: 543px) {}
 
 /* sm - Small Devices - 544px and up */
-@media (min-width : 544px) {
 
+@media (min-width: 544px) {}
+
+/* Small Devices Only - less than 767px */
+
+@media (max-width: 767px) {
+
+	footer .divide-bottom {
+		border-bottom: 1px dashed rgba(68, 133, 153, .5);
+	}
 }
 
 /* md - Medium Devices - 768px and up */
-@media (min-width : 768px) {
 
+@media (min-width: 768px) {
+
+	footer .divide-left {
+		border-left: 1px dashed rgba(68, 133, 153, .5);
+	}
+
+	footer .divide-right {
+		border-right: 1px dashed rgba(68, 133, 153, .5);
+	}
 }
 
 /* lg - Large Devices - 992px and up */
-@media (min-width : 992px) {
-  .navbar-nav {
-	line-height: 80px;
-  }
-  a.navbar-brand img {
-	height: 54px;
-	margin-top: 10px;
-  }
-  a.nav-link {
-	margin-top: 10px;
-	padding: 0px !important;
-	min-width: 120px;
-	text-align: center;
-	border-radius: 15px 30px 0 0;
-  }
+
+@media (min-width: 992px) {
+
+	.navbar-nav {
+		line-height: 80px;
+	}
+
+	a.navbar-brand img {
+		height: 54px;
+		margin-top: 10px;
+	}
+
+	a.nav-link {
+		margin-top: 10px;
+		padding: 0px !important;
+		min-width: 120px;
+		text-align: center;
+		border-radius: 15px 30px 0 0;
+	}
+
+	main {
+		min-height: calc(100vh - 335px);
+	}
 }
 
 /* xl - Extra Large Devices - 1200px and up */
-@media (min-width : 1200px) {
 
-}
+@media (min-width: 1200px) {}
