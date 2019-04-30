@@ -7,6 +7,8 @@ The word "SoLoMo" is an acronym for "Social Local Mobile".
 - Local - Is about creating an internet presence focused on geographic location.
 - Mobile - Refers to mobile first design. A website primarily optimised for phones and mobile devices.
 
+The SoLoMo website offers products based on various combinations of the above.  
+There are three products;  Solo, Duo & Trio.
 
 ## UX
 
@@ -15,13 +17,8 @@ I used design elements in groups of three to really drive home the concept of th
 
 I wanted the site to be very simple and cheerful but still communicate a powerful commercial message which is easily understood.
 
-Users visiting the site should immediately identify with the concept and very quickly decide which one of the three product bundles on offer applies to them.
+Customers should immediately identify with the concept and readily determine which product applies to them.
 
-SoLoMo offers local business's a suite of product bundles which include;
-
-- A mobile first design website
-- Search Engine Optimisation focused on geographic location
-- Social media account setup and integration
 
 ### User Story
 
