@@ -1,79 +1,142 @@
 # SoLoMo
 
-SoLoMo is a website which offers a three pronged strategy for Small Business Marketing.
- 
+SoLoMo is a website which offers a three pronged strategy for Local Business Marketing.  
+The word "SoLoMo" is an acronym for "Social Local Mobile".
+
+- Social - Social media platforms like Facebook, Twitter and Instagram.
+- Local - Is about creating an internet presence focused on geographic location.
+- Mobile - Refers to mobile first design. A website primarily optimised for phones and mobile devices.
+
+
 ## UX
- 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+My primary design goal for this site was to convey the simplicity of the SoLoMo marketing strategy.  
+I used design elements in groups of three to really drive home the concept of the SoLoMo three pronged approach to Local Business Marketing. I started with three strong colours for the logo, changed the colour scheme of the video to match, and used those same colours for the basis of the main design. The three product bundles, featuring three digital media services, were arranged in three columns and, where applicable, the same theme was followed throughout the layout right down to the three column footer.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+I wanted the site to be very simple and cheerful but still communicate a powerful commercial message which is easily understood.
+
+Users visiting the site should immediately identify with the concept and very quickly decide which one of the three product bundles on offer applies to them.
+
+SoLoMo offers local business's a suite of product bundles which include;
+
+- A mobile first design website
+- Search Engine Optimisation focused on geographic location
+- Social media account setup and integration
+
+### User Story
+
+Stan is a plumber.  
+He runs his own business offering commercial and domestic plumbing services to his clients.  
+As a small business owner Stan wants to attract new business closer to his home so he can increase productivity by spending less time driving and more time working on jobs.  
+
+What Stan needs is a website to advertise his business which is Search Engine Optimised for his location and targets customers in his local area.
+
+### Solution
+
+SoLoMo is a website which can provide Stan with the products he needs to achieve his goals.  
+The SoLoMo website has three product bundles from which to choose.
+
+- Solo: A mobile first designed website. For users who already have Social Media & Google Maps
+- Duo: A mobile first designed website + Google Maps. For users who already have Social Media
+- Trio: A mobile first designed website + Google Maps + Social Media
+
+When Stan visits the SoLoMo website he is presented with a concise statement which reassures him that he's in the right place. A prominent call to action invites Stan to "Learn More" and further secondary call to action buttons offer information or the option to get a product.  
+
+The "Learn More" and "Info" buttons will bring Stan to the "About" page where he will find a short video explaining everything he needs to know about the SoLoMo strategy.  
+
+The "Get" buttons bring Stan to the Products page where he can purchase his chosen product.
+
+### Project Wireframes
+
+Please see project wireframes here - [SoLoMo.pdf](https://internetpete.github.io/solomo/wireframe/SoLoMo.pdf)
+
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+- Navigation: Adapted from Bootstrap navbar example
+[Bootstrap navbar](https://getbootstrap.com/docs/4.3/examples/navbars/)
+- Jumbotron: Adapted from Bootstrap jumbotron example
+[Bootstrap Jumbotron](https://getbootstrap.com/docs/4.3/examples/jumbotron/)
+- Album: Adapted from Bootstrap album example
+[Bootstrap Album](https://getbootstrap.com/docs/4.3/examples/album/)
+- Video: HTML5 mp4 video embed
+- Price Tables: Adapted from Bootstrap pricing example
+[Bootstrap Pricing](https://getbootstrap.com/docs/4.3/examples/pricing/)
+- Forms: Adapted from Bootstrap checkout example
+[Bootstrap Checkout](https://getbootstrap.com/docs/4.3/examples/checkout/)
+- CSS Animation: CSS only animation used on Social Media icons
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
-- Another feature idea
+
+- Buy button functions
+- Contact Form validation function
+- Contact Form Email send function
+- Order Form validation function
+- Order Form Email send function
+
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+This project was created using the Bootstrap framework.
+I chose to use Bootstrap for it's responsive grid system and mobile-first approach.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- [Bootstrap 4.3.1](https://getbootstrap.com)
+- HTML5
+- CSS
 
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+Testing has shown that all pages function properly, look well, and behave as expected on various browsers and devices.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+### Browser
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+- Mozilla Firefox
+- Google Chrome
+- Safari
+- Edge
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+### Devices
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+- iPhone 5, 6
+- iPad
+- Laptop
+- Desktop PC
+- Smart TV
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+### GitHub Pages
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
+This project is deployed directly from the master branch to GitHub Pages.  
+Any new commits to the master branch will update the deployed site.  
+Please see deployed site here - [SoLoMo](https://internetpete.github.io/solomo/)
 
 
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+
+Any content used in the site is original content unless otherwise stated.  
+
+Some of the text is "Lorem Ipsum" placeholder text.  
+This is demonstration text used for layout purposes and was sourced from lipsum.com.  
+Please see here - [Lorem Ipsum](https://www.lipsum.com)
 
 ### Media
-- The photos used in this site were obtained from ...
+
+- The Solomo Logo is a graphic I created in Adobe Illustrator and exported as a Scalable Vector Graphic(SVG) for use in the site.
+- The About Video was made using an After Effects template from Jakub Vejmola. - 
+[jakubvejmola.com](http://jakubvejmola.com)
+- The stock photos used in this project were obtained from Adobe Stock Photos - 
+[stock.adobe.com](https://stock.adobe.com)
+- Vector icons are from Font Awesome - 
+[fontawesome.com](https://fontawesome.com/)
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration for this project from a marketing video template made by [Jakub Vejmola](http://jakubvejmola.com).
